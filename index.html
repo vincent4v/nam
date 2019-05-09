@@ -9,6 +9,7 @@
         <link rel="icon" type="image/png" href="https://cdn.plyr.io/static/icons/16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.plyr.io/static/icons/180x180.png" />
         <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/demo.css" />
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.3/plyr.css" />
         <link
             rel="preload"
             as="font"
@@ -37,7 +38,16 @@
                 Citations:
                 <br>
                 </p>
+                <video poster="https://www.vincentvh.com/v.png" id="player" playsinline controls>
+                <source src="https://www.vincentvh.com/v.mp4" type="video/mp4" />
+                </video>
             </header>
         </div>
+        <script src="https://cdn.plyr.io/3.5.3/plyr.js"></script>
+        <script>
+            const player = new Plyr('#player', {
+    title: 'Native American Movement',
+});
+        </script>
     </body>
 </html>
